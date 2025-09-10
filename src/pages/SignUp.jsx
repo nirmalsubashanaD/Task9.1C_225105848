@@ -13,7 +13,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { setDoc, doc, serverTimestamp } from "firebase/firestore";
 import { auth, db } from "../lib/firebase";
 import { useNavigate, Link as RouterLink } from "react-router-dom";
-import "./Signup.css";
+import "./SignUp.css";
 
 const Signup = () => {
   const navigate = useNavigate();
