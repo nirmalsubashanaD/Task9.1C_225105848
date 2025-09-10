@@ -1,0 +1,86 @@
+/* Make the container span the full width of the screen */
+.container {
+  width: 100vw;
+  background-color: #d3d3d3;
+  padding: 10px 5%; /* Add horizontal padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Style the heading */
+.container h2 {
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin: 0;
+  color: #000;
+}
+
+/* Style the form */
+.formemail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Style the input */
+.emailfoot{
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #333;
+  width: 250px;
+  font-family: 'Poppins', monospace;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+
+}
+
+/* Style the button */
+.subButton {
+  padding: 9px 20px;
+  background-color: #999;
+  color: #000;
+  border: none;
+  border-radius: 0%;
+  font-size: 14px;
+  font-family: 'Poppins', monospace;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* Optional: status message style */
+.status {
+  font-size: 14px;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subButton:hover{
+  background-color: rgb(116, 116, 116);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  input[type="email"],
+  button {
+    width: 100%;
+  }
+}
