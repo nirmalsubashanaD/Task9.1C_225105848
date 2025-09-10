@@ -7,7 +7,7 @@ import FeaturedTutorials from './components/Tutorials';
 import Footer from './components/Footer';
 import EmailPart from './components/EmailPart';
 import Login from '../src/pages/Login';
-import Signup from './pages/Signup';
+import Signup from './pages/SignUp';
 import ProtectedRoute from './routes/ProtectedRoute';
 import PostPage from './pages/QuestionList'; 
 
